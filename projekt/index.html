@@ -1,0 +1,319 @@
+<!-- ! Przyciski są skomentowane -->
+<!-- ? Znajdują się na dole każdego okienka ze zdj (po lewej stronie view i edit, a po prawej wyświetlenie kiedy dodany/edytowany itd.) 
+     ? W głównej sekcji przyciski akcji 1. i 2. również -->
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Projekcik</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url(images/bg.jpg);
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">O Projekcie</h4>
+            <p class="text-muted">Projekt zawiera przykładowe rasy psów, z trzech grup podziału na wielkość. Zdjęcia
+              wzięte z pexels mające na celu jedynie ułatwić zaliczenie projektu oraz zaprezentowanie danej rasy.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Menu</h4>
+            <ul class="list-unstyled">
+              <li><a href="#Bdog" class="text-white text-decoration-none fs-5">Rasy duże</a></li>
+              <li><a href="#Mdog" class="text-white text-decoration-none fs-5">Rasy średnie</a></li>
+              <li><a href="#Sdog" class="text-white text-decoration-none fs-5">Rasy małe</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <p class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
+            viewBox="0 0 24 24">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" />
+          </svg>
+          <strong>Mój przykładowy album</strong>
+        </p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">O Albumie</h1>
+          <p class="lead text-white fs-5">Album przedstawia kilka losowo wybranych i przykładowych ras psów wraz z
+            opisami na
+            potrzeby projektu.</p>
+          <!-- <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p> -->
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <!-- Tutaj dodać H z tagiem do menu ras dużych -->
+        <h2 id="Bdog" class="pt-5">Rasy dużych psów</h2>
+        <div class="row">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+
+                <img src="images/owczarek_niemiecki.jpg" class="bd-placeholder-img card-img-top" width="100%"
+                  height="225" alt="owczarek niemiecki">
+
+                <div class="card-body" style="height: 200px; background-color: #D7B784;">
+                  <p class="card-text"><b>Owczarek niemiecki</b> – jedna z ras psów należąca do grupy psów pasterskich
+                    sklasyfikowana do sekcji psów pasterskich. Zaliczany do psów obronnych. Typ wilkowaty.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+
+                    <!--! Przyciski view i edit do zdjęć w lewym dolnym rogu -->
+                    <!-- <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <!--! znacznik czasu w prawym dolnym rogu  -->
+                    <!-- <small class="text-muted">9 mins</small> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/akita_inu.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  alt="Akita Inu">
+
+                <div class="card-body" style="height: 200px; background-color: #D7B784;">
+                  <p class="card-text"><b>Akita</b> – rasa psa zaliczana do grupy szpiców i psów pierwotnych. Wyhodowana
+                    w
+                    Japonii pierwotnie do walk psów, później użytkowana również do polowań. Współcześnie pełni funkcje
+                    psa
+                    stróżująco-obronnego oraz psa do towarzystwa. Jest to największa rasa spośród ras japońskich.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/malamute.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  alt="Alaskan malamute">
+
+                <div class="card-body" style="height: 200px; background-color: #D7B784;">
+                  <p class="card-text"><b>Alaskan malamute</b> – rasa psa zaprzęgowego w typie szpica, zaliczana do ras
+                    pierwotnych. Jest to jedna z najstarszych ras arktycznych używanych do ciągnięcia sań i przenoszenia
+                    ładunków, typu wilkowatego.</p>
+                  <!-- <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="Mdog" class="pt-5 pb-5">Rasy psów średnich</h2>
+          <div class="row">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/samoyed.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  alt="Samoyed">
+
+                <div class="card-body" style="height: 200px; background-color: #E6D2B2;">
+                  <p class="card-text"><b>Samojed</b> – rasa psów, należąca do grupy szpiców i psów pierwotnych,
+                    zaklasyfikowana do sekcji północnych psów zaprzęgowych. Zgodnie z klasyfikacją amerykańską, należy
+                    do grupy psów pracujących. Typ lisowaty.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/shiba.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  alt="Shiba">
+
+                <div class="card-body" style="height: 200px; background-color: #E6D2B2;">
+                  <p class="card-text"><b>Shiba-inu</b> – jedna z sześciu ras psów japońskich, należąca do szpiców i
+                    psów w
+                    typie pierwotnym, zaliczona do sekcji szpiców azjatyckich i ras pokrewnych.</p>
+                  <!-- <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/chow_chow.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  alt="Chow Chow">
+
+                <div class="card-body" style="height: 200px; background-color: #E6D2B2;">
+                  <p class="card-text"><b>Chow chow</b> – rasa psa należąca do grupy szpiców i psów pierwotnych,
+                    zaklasyfikowana do sekcji szpiców azjatyckich i ras pokrewnych. Typ lisowaty.</p>
+                  <!-- <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <h2 id="Sdog" class="pt-5 pb-5">Rasy psów małych</h2>
+          <div class="row">
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/szpic_miniaturowy.jpg" class="bd-placeholder-img card-img-top" width="100%"
+                  height="225" alt="Szpic miniaturowy">
+
+                <div class="card-body" style="height: 200px; background-color: #F5EDE0;">
+                  <p class="card-text"><b>Szpic miniaturowy, pomeranian</b> – rasa psa, należąca do grupy szpiców i psów
+                    pierwotnych, zaklasyfikowana do sekcji szpiców europejskich. Nazwa bierze się od Pomeranii, czyli po
+                    polsku Pomorza. Typ lisowaty.</p>
+                  <!-- <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/Bichoin_frise.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  alt="Bichoin frise">
+
+                <div class="card-body" style="height: 200px; background-color: #F5EDE0;">
+                  <p class="card-text"><b>Bichon frise</b> – jedna z ras psów, należąca do grupy psów do towarzystwa,
+                    zaklasyfikowana do sekcji Biszonów i ras pokrewnych. Jest uznany za rasę francusko-belgijską.</p>
+                  <!-- <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/Corgi.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  alt="Corgi">
+
+                <div class="card-body" style="height: 200px; background-color: #F5EDE0;">
+                  <p class="card-text"><b>Welsh corgi pembroke</b> – jedna z ras psów, należąca do grupy psów
+                    pasterskich i
+                    zaganiających, zaklasyfikowana do sekcji psów pasterskich. Typ jamnikowaty.</p>
+                  <!-- <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-light py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#" class="btn btn-primary">Back to top</a>
+      </p>
+      <p class="mb-1">Album przygotowany przy pomocy Bootstrap'a </p>
+      <p class="mb-0">Projekt stworzony na potrzeby zaliczenia przedmiotu - Projektowanie witryn typu SPA.</p>
+    </div>
+  </footer>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
