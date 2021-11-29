@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Checkout example · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container mx-auto">
+  <main>
+    <div class="py-5 text-center">
+      <h2>Formularz</h2>     
+    </div>
+    <div class="row g-5">    
+      </div>
+      <div class="col-md-7 col-lg-8 mx-auto">
+        <h4 class="mb-3">Dane formularza</h4>
+        <form class="needs-validation" id="myfrm" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="Name" class="form-label">Imię</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Pole nie może zostać puste.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="LastName" class="form-label" id="LastName">Nazwisko</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Pole nie może zostać puste.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="Address" class="form-label">Adres</label>
+              <input type="text" class="form-control" id="address" placeholder="ul. Nijaka 123" required>
+              <div class="invalid-feedback">
+                Pole adres nie może być puste.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="Date" class="form-">Data urodzenia</label>
+              <input type="text" class="form-control" id="address2" placeholder="dd-mm-rrrr" required>
+            </div>
+
+            <div class="col-md-12">
+              <label for="City" class="form-label">Miasto</label>
+              <select class="form-select" id="country" required>
+                <option value="">Wybierz...</option>
+                <option>Gdańsk</option>
+                <option>Gdynia</option>
+                <option>Sopot</option>
+                <option>Warszawa</option>
+                <option>Poznań</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+          <h4 class="mb-3">Czy zaszczepiony?</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="Vacinated" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Tak</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input " required>
+              <label class="form-check-label " for="debit">Nie</label>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Wyślij</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>
